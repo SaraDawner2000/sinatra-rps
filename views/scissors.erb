@@ -1,2 +1,10 @@
-<p>This is the scissors page</p>
+<h2>We played <%=@player%>!</h2>
+<h2>They played <%=@computer%>!</h2>
+<%if @computer == @player%>
+  <h2>We tied!</h2>
+<%elsif @computer == "rock"%>
+  <h2>We lost!</h2>
+<%else%>
+  <h2>We won!</h2>
+<%end%>
 <div><a = href = "/">Rules</a></div>
